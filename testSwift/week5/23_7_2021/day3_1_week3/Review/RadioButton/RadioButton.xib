@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioButton" customModule="day3_1_week3" customModuleProvider="target">
+            <connections>
+                <outletCollection property="arr_button" destination="eT0-li-xpP" collectionClass="NSMutableArray" id="TqB-ZW-V8m"/>
+                <outletCollection property="arr_button" destination="PBU-sk-0eC" collectionClass="NSMutableArray" id="XLG-AA-CL2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-ks-2Xc">
+                    <rect key="frame" x="103" y="80" width="138" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-li-xpP">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Hsz-Mh-WTh"/>
+                                <constraint firstAttribute="width" constant="25" id="ZE2-xo-lKt"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onTapBUtton:" destination="-1" eventType="touchUpInside" id="ej4-Ue-uEc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-sk-0eC">
+                            <rect key="frame" x="113" y="0.0" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="5qp-5A-h2a"/>
+                                <constraint firstAttribute="height" constant="25" id="NWu-RV-Kww"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onTapBUtton:" destination="-1" eventType="touchUpInside" id="gBv-jf-fdm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="PBU-sk-0eC" firstAttribute="leading" secondItem="eT0-li-xpP" secondAttribute="trailing" id="9Kl-d6-nN2"/>
+                        <constraint firstItem="PBU-sk-0eC" firstAttribute="leading" secondItem="eT0-li-xpP" secondAttribute="trailing" constant="30" id="lwg-AV-vY5"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-62.318840579710148" y="-451.33928571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
